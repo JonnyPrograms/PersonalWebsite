@@ -5,6 +5,7 @@ import Githublogo from "../assets/Github_logo.png";
 
 function Header() {
     return (
+        <>
         <header className="header">
             <div className="header_container">
                 <div className="left_side">
@@ -33,6 +34,8 @@ function Header() {
                 </nav>
             </div>
         </header>
+        <div className="horizontal_line"></div>
+        </>
     );
 }
 
