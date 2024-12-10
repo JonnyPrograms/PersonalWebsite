@@ -1,0 +1,79 @@
+/* General Section Styling */
+.projects_section {
+    padding: 50px 20px;
+    background: linear-gradient(to right, #ffe4e1, #fafad2, #98fb98); /* Soft gradient */
+    color: white;
+}
+
+.projects_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+/* Title Styling */
+.projects_title {
+    font-size: 3em;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateX(-100%); /* Start off-screen */
+    animation: slideIn 2s ease-in-out forwards; /* Fade and slide in */
+}
+
+/* Keyframe Animation for Title */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Project Box Styling */
+.projects_list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project_1, .project_2, .project_3 {
+    background: rgba(255, 255, 255, 0.1);
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    flex: 1 1 calc(33% - 20px); /* Responsive grid */
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out; /* Smooth hover effects */
+}
+
+/* Hover Effect for Projects */
+.project_1:hover, .project_2:hover, .project_3:hover {
+    transform: scale(1.1); /* Grow effect */
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Project Text Styling */
+.project_1 h3, .project_2 h3, .project_3 h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.project_1 p, .project_2 p, .project_3 p {
+    font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project_1, .project_2, .project_3 {
+        flex: 1 1 100%;
+    }
+}
