@@ -1,7 +1,6 @@
-/* General Section Styling */
 .projects_section {
     padding: 50px 20px;
-    background: linear-gradient(to right, #ffe4e1, #fafad2, #98fb98); /* Soft gradient */
+    background: linear-gradient(to right, #97d9fa, #8524f4);
     color: white;
 }
 
@@ -9,61 +8,52 @@
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    position: relative;
 }
 
-/* Title Styling */
 .projects_title {
-    font-size: 3em;
+    font-size: 4em;
     font-weight: bold;
     color: black;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
+    margin-top: 10px;
     opacity: 0;
-    transform: translateX(-100%); /* Start off-screen */
-    animation: slideIn 2s ease-in-out forwards; /* Fade and slide in */
+    transform: translateX(-100%);
+    transition: all 1s ease-in-out;
 }
 
-/* Keyframe Animation for Title */
-@keyframes slideIn {
-    0% {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
+.projects_title.animate {
+    opacity: 1;
+    transform: translateX(0);
 }
 
-/* Project Box Styling */
 .projects_list {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    align-items: flex-start;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .project_1, .project_2, .project_3 {
-    background: rgba(255, 255, 255, 0.1);
-    color: black;
+    background: rgba(255, 255, 255, 0.15);
+    color:black;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     padding: 20px;
     text-align: center;
     cursor: pointer;
-    flex: 1 1 calc(33% - 20px); /* Responsive grid */
-    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out; /* Smooth hover effects */
+    flex: 0 0 calc(33.333% - 20px);
+    height: 300px;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
 }
 
-/* Hover Effect for Projects */
 .project_1:hover, .project_2:hover, .project_3:hover {
-    transform: scale(1.1); /* Grow effect */
-    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.3);
 }
 
-/* Project Text Styling */
 .project_1 h3, .project_2 h3, .project_3 h3 {
-    font-size: 1.5em;
+    font-size: 2em;
     margin-bottom: 10px;
 }
 
@@ -71,9 +61,9 @@
     font-size: 1em;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .project_1, .project_2, .project_3 {
         flex: 1 1 100%;
+        margin-bottom: 20px;
     }
 }

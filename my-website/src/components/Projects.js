@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../styling/Projects.css";
 
 function Projects() {
+    const [animateTitle, setAnimateTitle] = useState(false);
+
+    useEffect(() => {
+        setAnimateTitle(true);
+    }, []);
+
     return (
         <section className="projects_section">
             <div className="projects_container">
-                <h2 className="projects_title">Projects</h2>
+            <h2 className={`projects_title ${animateTitle ? "animate" : ""}`}>Projects</h2>
                 <div className="projects_list">
                     <div className="project_1"
                         onClick={() => window.open("https://github.com/JonnyPrograms/portfolio", "_blank")}>
