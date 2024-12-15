@@ -86,7 +86,7 @@
 .changing_word {
     opacity: 0;
     animation: fadeInOut 8s ease-in-out infinite;
-    color: purple;
+    color: rgb(99, 0, 144);
 }
 
 @keyframes fadeInOut {

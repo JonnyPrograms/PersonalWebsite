@@ -14,7 +14,7 @@ function Projects() {
             <h2 className={`projects_title ${animateTitle ? "animate" : ""}`}>Projects</h2>
                 <div className="projects_list">
                     <div className="project_1"
-                        onClick={() => window.open("https://github.com/JonnyPrograms/portfolio", "_blank")}>
+                        onClick={() => window.open("https://github.com/JonnyPrograms/PersonalWebsite", "_blank")}>
                             <h3>Portfolio Website</h3>
                             <p>My personal Portfolio website</p>
                     </div>

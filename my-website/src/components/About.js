@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../styling/About.css";
-import ProfilePic from "../assets/Linkedin_ProfilePic.jpeg";
+import ProfilePic from "../assets/logos/Linkedin_ProfilePic.jpeg";
 
 function About() {
 
