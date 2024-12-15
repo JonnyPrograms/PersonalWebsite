@@ -1,7 +1,8 @@
-import react from "react";
+import React from "react";
 import Header from "./components/Header";
 import About from "./components/About";
-import Projects from "./components/Projects"
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 
 function App() {
   return (
@@ -12,8 +13,11 @@ function App() {
           {/* About Section */}
           <About />
 
-          {/* Projects Section*/}
+          {/* Projects Section */}
           <Projects />
+
+          {/* Skills Section */}
+          <Skills />
 
           {/* Add other sections like Projects, Skills, etc. here */}
       </div>

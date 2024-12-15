@@ -1,7 +1,7 @@
 import React from "react";
 import "../styling/Header.css";
-import linkedinlogo from "../assets/LinkedIn_logo.png";
-import Githublogo from "../assets/Github_logo.png";
+import linkedinlogo from "../assets/logos/LinkedIn_logo.png";
+import Githublogo from "../assets/logos/Github_logo.png";
 
 function Header() {
     return (
