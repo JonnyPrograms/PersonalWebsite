@@ -11,7 +11,7 @@ import SwiftImage from "../assets/skills/swift.jpg";
 
 const skills = [
     { name: "C++", image: CppImage },
-    { name: "CSharp", image: CSharpImage },
+    { name: "C#", image: CSharpImage },
     { name: "CSS", image: CssImage },
     { name: "HTML", image: HtmlImage },
     { name: "Java", image: JavaImage },
