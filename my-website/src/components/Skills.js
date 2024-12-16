@@ -24,7 +24,7 @@ function Skills() {
     return (
         <section className="skills_section">
             <h2 className="skills_title">Technical Skills</h2>
-            <div className="skill_grid">
+            <div className="skills_grid">
                 {skills.map((skill, index) => (
                     <div key={index} className="skill_card">
                         <img src={skill.image} alt={`${skill.name} logo`} className="skill_image" />
