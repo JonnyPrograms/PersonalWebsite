@@ -3,6 +3,8 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import Certifications from "./components/Certifications";
+import './App.css';
 
 function App() {
   return (
@@ -18,6 +20,9 @@ function App() {
 
           {/* Skills Section */}
           <Skills />
+
+          {/* Certifications Section */}
+          <Certifications />
 
           {/* Add other sections like Projects, Skills, etc. here */}
       </div>
