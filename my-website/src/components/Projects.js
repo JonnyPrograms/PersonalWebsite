@@ -21,7 +21,7 @@ function Projects() {
     };
 
     return (
-        <section className="projects_section">
+        <section id= "projects" className="projects_section">
             <div className="projects_container">
             <h2 className={`projects_title ${animateTitle ? "animate" : ""}`}>Projects</h2>
                 <div className="projects_list">
