@@ -48,7 +48,7 @@ function Projects() {
                             </div>
                     </div>
                     <div className="project_2"
-                        onClick={() => window.open("Quotesystemlink", "_blank")}>
+                        onClick={() => window.open("https://github.com/JonnyPrograms/Quoting-System", "_blank")}>
                             <h3>Quoting System</h3>
                             <p>Full stack quoting system built with HTML, CSS, KendoUI,
                                 C#, and .NET. Has many features such as managing/creating
