@@ -5,7 +5,7 @@ import CSharpImage from "../assets/skills/Csharp.png";
 import CssImage from "../assets/skills/CSS.jpg";
 import HtmlImage from "../assets/skills/HTML.jpg";
 import JavaImage from "../assets/skills/java.png";
-import JavaScriptImage from "../assets/skills/javaScript.jpg";
+import ReactImage from "../assets/skills/react.png";
 import PythonImage from "../assets/skills/python.jpg";
 import SwiftImage from "../assets/skills/swift.jpg";
 
@@ -15,7 +15,7 @@ const skills = [
     { name: "CSS", image: CssImage },
     { name: "HTML", image: HtmlImage },
     { name: "Java", image: JavaImage },
-    { name: "JavaScript", image: JavaScriptImage },
+    { name: "React", image: ReactImage },
     { name: "Python", image: PythonImage },
     { name: "Swift", image: SwiftImage },
 ];
