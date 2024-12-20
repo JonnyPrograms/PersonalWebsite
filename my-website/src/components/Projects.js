@@ -73,8 +73,15 @@ function Projects() {
                     </div>
                     <div className="project_3"
                         onClick={() => window.open("NBAProjectLink", "_blank")}>
-                            <h3>NBA Data Project</h3>
-                            <p>NBA project that holds a lot of data</p>
+                            <h3>NBA Performance Predictor</h3>
+                            <p>
+                                Machine learning model that predicts
+                                the performance of NBA players in upcoming
+                                games by leveraging historical player
+                                statistics, game context, and advanced analytics
+                                to forecast individual player metrics.
+                            </p>
+                            <h4>Currently in progress...</h4>
                     </div>                  
                 </div>
             </div>

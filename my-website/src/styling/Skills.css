@@ -1,33 +1,29 @@
-/* Section Styling */
 .skills_section {
     padding: 50px 20px;
-    background-color: black; /* Black background for the section */
+    background-color: black; 
     color: white;
     text-align: center;
 }
 
-/* Title Styling */
 .skills_title {
     font-size: 4em;
     font-weight: bold;
     margin-bottom: 80px;
 }
 
-/* Grid Layout */
 .skills_grid {
-    display: grid; /* Enable grid layout */
-    grid-template-columns: repeat(4, 1fr); /* Create 4 equal columns */
-    gap: 20px; /* Space between items in the grid */
-    justify-content: center; /* Center the grid items horizontally */
-    margin: 0 auto; /* Center the grid within the section */
-    max-width: 1000px; /* Prevent the grid from stretching too wide */
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 70px; 
+    justify-content: center; 
+    margin: 0 auto; 
+    max-width: 1000px; 
 }
 
-/* Skill Card Styling */
 .skill_card {
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 110px;
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
@@ -40,16 +36,13 @@
     transform: scale(1.1);
 }
 
-/* Skill Image Styling */
 .skill_image {
     width: 100%;
     height: 100%;
-    object-fit: contain;
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
 }
 
-/* Skill Name Styling */
 .skill_name {
     position: absolute;
     top: 50%;
@@ -70,15 +63,14 @@
     opacity: 0.3;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .skills_grid {
-        grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns for medium screens */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 480px) {
     .skills_grid {
-        grid-template-columns: 1fr; /* Adjust to 1 column for small screens */
+        grid-template-columns: 1fr;
     }
 }

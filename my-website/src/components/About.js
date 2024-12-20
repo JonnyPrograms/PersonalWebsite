@@ -5,7 +5,7 @@ import ProfilePic from "../assets/logos/Linkedin_ProfilePic.jpeg";
 function About() {
 
     const wordsForSoftware = ["creative", "efficient", "innovative", "useful", "impactful", "dynamic"];
-    const wordsForInterests = ["software development", "data science", "machine learning", "software engineering"];
+    const wordsForInterests = ["software development", "data science", "software engineering", "machine learning"];
     const [currentSoftwareWord, setCurrentSoftwareWord] = useState(0);
     const [currentInterestsWord, setCurrentInterestsWord] = useState(0);
 
