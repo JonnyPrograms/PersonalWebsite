@@ -108,3 +108,29 @@
         opacity: 0;
     }
 }
+
+@media (max-width: 768px) {
+    .about_container {
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .about_text {
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .about_text h1 {
+        font-size: 3em;
+    }
+
+    .about_text p {
+        font-size: 1.2em;
+    }
+
+    .about_profile img {
+        max-width: 300px;
+    }
+}

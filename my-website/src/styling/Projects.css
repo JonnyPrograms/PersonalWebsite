@@ -114,8 +114,25 @@
 }
 
 @media (max-width: 768px) {
-    .project_1, .project_2, .project_3 {
-        flex: 1 1 100%;
-        margin-bottom: 20px;
+    .projects_title {
+        font-size: 3em;
+        margin-bottom: 40px;
+    }
+
+    .projects_list {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .project_1,
+    .project_2,
+    .project_3 {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .project_image {
+        margin-top: 10px;
     }
 }
