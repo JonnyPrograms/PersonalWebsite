@@ -34,3 +34,13 @@
         background-color: rgb(206, 6, 206);
     }
 }
+
+@media (max-width: 768px) {
+    .footer_name {
+        font-size: 1.5em;
+    }
+
+    .horizontal_line {
+        height: 3px;
+    }
+}

@@ -128,3 +128,48 @@
         left: -10px;
     }
 }
+
+@media (max-width: 768px) {
+    .certifications_title {
+        font-size: 2.5em; 
+        margin-bottom: 40px;
+    }
+
+    .timeline {
+        max-width: 100%; 
+    }
+
+    .timeline_item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .timeline_content {
+        height: auto;
+        width: 100%; 
+        margin-left: 0;
+    }
+
+    .timeline_item:before {
+        left: -10px; 
+    }
+
+    .timeline_item:after {
+        left: 5px; 
+        top: 50px;
+    }
+
+    .certification_image {
+        width: 50px; 
+        height: 50px;
+    }
+
+    .certification_name {
+        font-size: 1em; 
+    }
+
+    .certification_date {
+        font-size: 0.8em; 
+    }
+}
