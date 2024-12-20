@@ -25,22 +25,22 @@
 
 .about_text h1,
 .about_text p {
-    opacity: 0; /* Start invisible */
-    transform: translateY(-50px); /* Start slightly above the final position */
-    animation: dropIn 2s ease-out forwards; /* Apply drop-in animation */
+    opacity: 0;
+    transform: translateY(-50px); 
+    animation: dropIn 2s ease-out forwards; 
 }
 
 .about_text h1 {
     font-size: 6em;
     margin-bottom: 10px;
-    animation-delay: 0.3s; /* Delay for the heading */
+    animation-delay: 0.3s; 
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .about_text p {
     font-size: 2em;
     line-height: 1.5;
-    animation-delay: 0.6s; /* Slightly delayed for the paragraph */
+    animation-delay: 0.6s; 
 }
 
 .about_profile {
@@ -56,33 +56,32 @@
     border-radius: 50%;
     border: 4px solid white; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); 
-    opacity: 0; /* Start invisible */
-    animation: fadeIn 5s ease-in forwards; /* Fade-in animation */
+    opacity: 0;
+    animation: fadeIn 5s ease-in forwards; 
 }
 
 @keyframes fadeIn {
     0% {
         opacity: 0;
-        transform: scale(0.9); /* Optional: Slight zoom effect */
+        transform: scale(0.9); 
     }
     100% {
         opacity: 1;
-        transform: scale(1); /* Reset zoom */
+        transform: scale(1); 
     }
 }
 
 @keyframes dropIn {
     0% {
         opacity: 0;
-        transform: translateY(-50px); /* Start above */
+        transform: translateY(-50px);
     }
     100% {
         opacity: 1;
-        transform: translateY(0); /* End at original position */
+        transform: translateY(0); 
     }
 }
 
-/* Fading animation for words */
 .changing_word {
     opacity: 0;
     animation: fadeInOut 8s ease-in-out infinite;

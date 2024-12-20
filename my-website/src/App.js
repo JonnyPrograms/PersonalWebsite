@@ -27,8 +27,6 @@ function App() {
 
           {/* Footer Section */}
           <Footer />
-
-          {/* Add other sections like Projects, Skills, etc. here */}
       </div>
   );
 }
