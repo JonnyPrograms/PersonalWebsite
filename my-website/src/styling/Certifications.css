@@ -1,106 +1,118 @@
+/* Certification section styling */
 .certifications_section {
-    padding: 50px 20px;
-    background-color: #020202;
+    padding: 50px 20px; /* Add spacing around the section */
+    background-color: #020202; /* Dark background color */
     color: #333;
     text-align: center;
 }
 
+/* Title styling */
 .certifications_title {
     font-size: 4em;
-    font-weight: bold;
-    margin-bottom: 80px;
+    font-weight: bold; /* Make the text bold */
+    margin-bottom: 80px; /* Add spacing below the title */
     text-align: center;
-    background: linear-gradient(90deg, rgb(44, 150, 255), rgb(219, 39, 255), rgb(255, 106, 0));
+    background: linear-gradient(90deg, rgb(44, 150, 255), rgb(219, 39, 255), rgb(255, 106, 0)); /* Gradient effect in title */
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; /* Make gradient visible in text */
     background-clip: text;
-    background-size: 30%;
+    background-size: 30%; /* Percentage to fill the text */
     background-position: center;
 }
 
+/* Timeline styling */
 .timeline {
     position: relative;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto; /* Center the timeline */
 }
 
+/* Individual timeline item styling */
 .timeline_item {
     position: relative;
-    margin: 40px 0;
+    margin: 40px 0; /* Add vertical spacing */
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 20px; /* Space between elements */
 }
 
+/* Circle indicator for each timeline element */
 .timeline_item:before {
-    content: "";
+    content: ""; /* Empty circle */
     position: absolute;
     left: 0; 
     top: 45px;
     width: 15px;
     height: 15px;
-    background-color: #4a90e2;
-    border-radius: 50%;
-    z-index: 1;
+    background-color: #4a90e2; /* Blue color */
+    border-radius: 50%; /* Make it round */
+    z-index: 1; /* Ensure its on the top layer */
 }
 
+/* Verticle line that connects timeline items styling */
 .timeline_item:not(:last-child):after {
-    content: "";
+    content: ""; /* Empty line */
     position: absolute;
     left: 7px;
     top: 60px;
     width: 2px;
-    height: calc(100%);
+    height: calc(100%); /* Extend the line to the next item */
     background-color: #4a90e2;
-    z-index: 0;
+    z-index: 0; /* Ensure its behind the circles */
 }
 
+/* Content box for each timeline */
 .timeline_content {
-    background-color: white;
+    background-color: white; /* white background */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow */
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    margin-left: 40px;
+    margin-left: 40px; /* Offset content from the timeline */
     text-align: left;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Hover effect */
     width: 100%; 
     height: 75px; 
     max-width: 600px; 
 }
 
+/* Hover effect */
 .timeline_content:hover {
-    transform: translateY(-5px); 
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
-    background-color: rgba(240, 240, 255, 1); 
+    transform: translateY(-5px); /* Move the box up slightly */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    background-color: rgba(240, 240, 255, 1); /* Slightly lighter */
 }
 
+/* Styling for certification images */
 .certification_image {
     width: 75px; 
     height: 75px; 
-    object-fit: contain;
+    object-fit: contain; /* Ensure images are scaled proportionally */
     border-radius: 5px;
 }
 
+/* Certification name styling */
 .certification_name {
     font-size: 1.2em;
     font-weight: bold;
     margin: 0;
     color: #333;
-    flex: 1; 
+    flex: 1; /* Fill available space */
 }
 
+/* Certification date styling */
 .certification_date {
     font-size: 0.9em;
     color: #555;
     text-align: right;
-    flex: 0.5; 
+    flex: 0.5; /* Smaller width */
 }
 
+/* Timeline items styling */
 .timeline_item {
     display: flex;
     align-items: center;
@@ -110,6 +122,7 @@
     flex-wrap: nowrap;
 }
 
+/* Adjustments for smaller screens */
 @media (max-width: 768px) {
     .timeline_item {
         flex-direction: column;
@@ -129,6 +142,7 @@
     }
 }
 
+/* Adjustments for smaller screens */
 @media (max-width: 768px) {
     .certifications_title {
         font-size: 2.5em; 
