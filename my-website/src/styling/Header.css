@@ -1,61 +1,72 @@
+/* Container for the header section */
 .header_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #000000;
+    padding: 10px 20px; /* Add space around the section */
+    background-color: #000000; /* Black background */
 }
 
+/* Left side of header styling */
 .left_side {
-    display: flex;
-    color: white;
+    display: flex; /* Align items in a row */
+    color: white; 
     align-items: center;
     font-size: 1em;
 }
 
+/* Header title styling */
 .left_side h1 {
-    margin-right: 15px;
+    margin-right: 15px; /* Add space to the right */
 }
 
+/* Links styling */
 .left_side a {
     margin-left: 10px;
 }
 
+/* Images styling */
 .left_side img {
-    width: 30px;
-    height: 30px;
-    object-fit: contain;
+    width: 30px; 
+    height: 30px; /* Set height to be the same as width */
+    object-fit: contain; /* Ensure the image retains it's aspect ratio */
     padding-top: 7px;
 }
 
+/* unordered list styling */
 .right_side ul {
-    list-style-type: none;
+    list-style-type: none; /* Remove all default bullet points */
     margin: 0;
     padding: 0;
     display: flex;
 }
 
+/* List items styling */
 .right_side li {
     margin-left: 20px;
 }
 
+/* Links navigation */
 .right_side a {
     text-decoration: none;
     color: white;
     font-size: 1em;
 }
 
+/* Hover effect for links */
 .right_side a:hover {
     color: #0ceaf5
 }
 
+/* Horizontal line styling */
 .horizontal_line {
-    width: 100%;
-    height: 4px;
-    background-color: transparent;
-    animation: colorChange 10s infinite alternate;
+    width: 100%; /* Make is span the entire width of the section */
+    height: 4px; /* Thinkness of the line */
+    background-color: transparent; /* Make it transparent */
+    animation: colorChange 10s infinite alternate; /* Make it alternate through all colors in 10 seconds */
 }
 
+/* Color changing animation */
 @keyframes colorChange {
     0%{
         background-color: rgb(0, 200, 255);
@@ -74,28 +85,29 @@
     }
 }
 
+/* Adjustments for smaller screens */
 @media (max-width: 768px) {
     .header_container {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-start; /* Align items to the left */
     }
 
     .left_side {
         margin-bottom: 10px;
-        font-size: 0.9em;
+        font-size: 0.9em; /* Reduce font size */
     }
 
     .right_side ul {
-        flex-direction: column;
+        flex-direction: column; /* Stack vertically */
         width: 100%;
     }
 
     .right_side li {
         margin-left: 0;
-        margin-bottom: 10px;
+        margin-bottom: 10px; /* Add space between each item */
     }
 
     .horizontal_line {
-        height: 3px;
+        height: 3px; /* Adjust thinkness of line */
     }
 }
