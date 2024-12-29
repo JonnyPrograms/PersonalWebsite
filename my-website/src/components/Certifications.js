@@ -1,15 +1,17 @@
+//Import necessary modules and assets
 import React from "react";
 import "../styling/Certifications.css";
 import AdvancedBadge from "../assets/certs/AdvancedCert.png";
 import ASDegree from "../assets/certs/ASDegree.png";
 import ConceptsBadge from "../assets/certs/ConceptsCert.png";
 
+//Array of certifications with details
 const certifications = [
     {
-        title: "Assosiates Degree in Science",
-        date: "July 2023",
-        image: ASDegree,
-        link: "https://www.parchment.com/u/award/edd5d6fed71e6cc1e70f2a04b2975573",
+        title: "Assosiates Degree in Science", //Name of the certification
+        date: "July 2023", //Date that the certification was obtained
+        image: ASDegree, //Image of the certification
+        link: "https://www.parchment.com/u/award/edd5d6fed71e6cc1e70f2a04b2975573", //Link to view the certification
     },
     {
         title: "IBM Concepts Badge",
