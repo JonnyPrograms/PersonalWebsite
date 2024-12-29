@@ -1,3 +1,4 @@
+//Import necessary modules and assets
 import React from "react";
 import "../styling/Skills.css";
 import CppImage from "../assets/skills/C++.jpg";
@@ -9,6 +10,7 @@ import ReactImage from "../assets/skills/react.png";
 import PythonImage from "../assets/skills/python.jpg";
 import SwiftImage from "../assets/skills/swift.jpg";
 
+//Array of skill images
 const skills = [
     { name: "C++", image: CppImage },
     { name: "C#", image: CSharpImage },
