@@ -1,3 +1,4 @@
+//Import necessary modules and assets
 import React from "react";
 import "../styling/Footer.css";
 
