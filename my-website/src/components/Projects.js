@@ -1,3 +1,4 @@
+//Import necessary modules and assets
 import React, { useEffect, useState } from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import "../styling/Projects.css";
@@ -5,17 +6,24 @@ import PortfolioPicture from "../assets/websites/PortfolioWebPic.png";
 import QuoteSystemPicture from "../assets/websites/QuotingSystemPic.png";
 
 function Projects() {
+
+    //State to manage animation for the section title
     const [animateTitle, setAnimateTitle] = useState(false);
+
+    //State to manage the image displayed in the modal
     const [modalImage, setModalImage] = useState(null);
 
+    //useEffect to trigger the animation for the section title
     useEffect(() => {
-        setAnimateTitle(true);
+        setAnimateTitle(true); //Start animation
     }, []);
 
+    //Function to open the image modal with the given image source
     const openModal = (imageSrc) => {
         setModalImage(imageSrc)
     };
 
+    //Function to close the image modal
     const closeModal = () => {
         setModalImage(null);
     };
