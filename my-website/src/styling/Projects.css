@@ -1,16 +1,19 @@
+/* Project section styling */
 .projects_section {
-    padding: 50px 20px;
-    background: linear-gradient(to right, #97d9fa, #8524f4);
+    padding: 50px 20px; /* Spacing around the section */
+    background: linear-gradient(to right, #97d9fa, #8524f4); /* Gradient background color */
     color: white;
-    padding-bottom: 100px;
+    padding-bottom: 100px; /* Extra spacing in bottom */
 }
 
+/* Project container styling */
 .projects_container {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
 }
 
+/* Project title styling */
 .projects_title {
     font-size: 4em;
     font-weight: bold;
@@ -18,85 +21,96 @@
     margin-bottom: 60px;
     margin-top: 10px;
     opacity: 0;
-    transform: translateX(-100%);
-    transition: all 1s ease-in-out;
+    transform: translateX(-100%); /* Move title off the screen to the left */
+    transition: all 1s ease-in-out; /* Animation to change the position */
 }
 
+/* Animation to center title */
 .projects_title.animate {
     opacity: 1;
     transform: translateX(0);
 }
 
+/* Styling for the lists of projects */
 .projects_list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; /* Evenly distribute projects */
     align-items: flex-start;
     gap: 70px;
     padding-top: 30px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* allow wrapping to the next line for smaller screens */
 }
 
+/* Individual project card styles */
 .project_1, .project_2, .project_3 {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
     color:black;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Slight shadow */
     padding: 20px;
     text-align: center;
-    cursor: pointer;
+    cursor: pointer; /* Pointer cursor */
     width: 300px;
     height: 500px;
-    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out; /* Hover effect */
 }
 
+/* Hover effect for project cards */
 .project_1:hover, .project_2:hover, .project_3:hover {
-    transform: scale(1.05);
-    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05); /* Slight zoom in */
+    background: rgba(255, 255, 255, 0.3); /* Slightly lighter background */
 }
 
+/* Project title styles */
 .project_1 h3, .project_2 h3, .project_3 h3 {
     font-size: 2em;
     margin-bottom: 10px;
 }
 
+/* Description text styles */
 .project_1 p, .project_2 p, .project_3 p {
     font-size: .9em;
-    line-height: 1.4;
+    line-height: 1.4; /* Space between lines */
     padding-top: 10px;
 }
 
+/* Specific padding for project 3 */
 .project_3 h4 {
     padding-top: 188px;
 }
 
+/* Image of projects styling */
 .project_image {
     width: 100%;
     height: auto;
     border-radius: 8px;
     margin-top: 15px;
     box-shadow: 0 4px 6px rbga(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out; /* Hover scaling */
     cursor: pointer;
 }
 
+/* Hover effect */
 .project_image:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Zoom it in */
 }
 
+/* Displaying images in fullscreen */
 .image_modal {
-    position: fixed;
+    position: fixed; /* Stay fixed on screen */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    z-index: 1000; /* Bring modal to the front */
     cursor: pointer;
 }
 
+/* Styles for images in regular size */
 .modal_image {
     max-width: 90%;
     max-height: 90%;
@@ -105,14 +119,17 @@
     cursor: default;
 }
 
+/* Padding adjustments for project1 */
 .project1_source {
     padding-top: 60px;
 }
 
+/* Padding asjustments for project2 */
 .project2_source {
     padding-top: 48px;
 }
 
+/* Adjustments for smaller screens */
 @media (max-width: 768px) {
     .projects_title {
         font-size: 3em;
