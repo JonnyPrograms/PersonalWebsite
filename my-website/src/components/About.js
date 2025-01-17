@@ -9,7 +9,7 @@ function About() {
     const wordsForSoftware = ["creative", "efficient", "innovative", "useful", "impactful", "dynamic"];
 
     //Array of words for interests
-    const wordsForInterests = ["software development", "data science", "software engineering", "machine learning", "mainframe programming"];
+    const wordsForInterests = ["software development", "data science", "software engineering", "machine learning", "mainframe dev"];
 
     //States to track the current words being displayed
     const [currentSoftwareWord, setCurrentSoftwareWord] = useState(0);
