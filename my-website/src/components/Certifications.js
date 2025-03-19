@@ -14,13 +14,13 @@ const certifications = [
         link: "https://www.parchment.com/u/award/edd5d6fed71e6cc1e70f2a04b2975573", //Link to view the certification
     },
     {
-        title: "IBM Concepts Badge",
+        title: "IBM Z Xplore Concepts Badge",
         date: "September 2024",
         image: ConceptsBadge,
         link: "https://www.credly.com/badges/d8f19992-5316-41e4-93a6-b70ab46f7826",
     },
     {
-        title: "IBM Advanced Badge",
+        title: "IBM Z Xplore Advanced Badge",
         date: "December 2024",
         image: AdvancedBadge,
         link: "https://www.credly.com/earner/earned/badge/f0e90aee-b1aa-4f33-acea-0fe27e5dcd75",
