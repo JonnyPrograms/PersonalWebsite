@@ -17,13 +17,13 @@ const certifications = [
         title: "IBM Z Xplore Concepts Badge",
         date: "September 2024",
         image: ConceptsBadge,
-        link: "https://www.credly.com/badges/d8f19992-5316-41e4-93a6-b70ab46f7826",
+        link: "https://www.credly.com/badges/d8f19992-5316-41e4-93a6-b70ab46f7826/public_url",
     },
     {
         title: "IBM Z Xplore Advanced Badge",
         date: "December 2024",
         image: AdvancedBadge,
-        link: "https://www.credly.com/earner/earned/badge/f0e90aee-b1aa-4f33-acea-0fe27e5dcd75",
+        link: "https://www.credly.com/badges/f0e90aee-b1aa-4f33-acea-0fe27e5dcd75/public_url",
     }
 ];
 
