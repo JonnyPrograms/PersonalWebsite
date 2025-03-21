@@ -4,6 +4,7 @@ import "../styling/Certifications.css";
 import AdvancedBadge from "../assets/certs/AdvancedCert.png";
 import ASDegree from "../assets/certs/ASDegree.png";
 import ConceptsBadge from "../assets/certs/ConceptsCert.png";
+import AllStarBadge from "../assets/certs/AllStarCert.png";
 
 //Array of certifications with details
 const certifications = [
@@ -24,7 +25,14 @@ const certifications = [
         date: "December 2024",
         image: AdvancedBadge,
         link: "https://www.credly.com/badges/f0e90aee-b1aa-4f33-acea-0fe27e5dcd75/public_url",
+    },
+    {
+        title: "IBM Z Xplore All Star Badge",
+        date: "March 2025",
+        image: AllStarBadge,
+        link: "https://www.credly.com/badges/11fdee0b-5776-4fc8-9370-2b5a851feb62/public_url",
     }
+
 ];
 
 function Certifications() {
